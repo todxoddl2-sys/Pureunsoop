@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>푸른숲법면녹화 - 전문 법면녹화 & 비탈면 안정을 위한 최선의 선택</title>
+
+  <!-- 링크 공유(카톡/모바일 등) 시 나타나는 대표 이미지/정보 설정 (Open Graph) -->
+  <meta property="og:title" content="푸른숲법면녹화 - 전문 법면녹화 & 비탈면 안정을 위한 최선의 선택">
+  <meta property="og:description" content="지질 분석부터 맞춤형 종자 배합, 정밀 시공까지 완성하는 전문 법면녹화 솔루션">
+  <meta property="og:image" content="bg.jpg">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +57,7 @@
     }
 
     .section {
-      padding: 90px 0;
+      padding: 80px 0;
     }
 
     .section-title {
@@ -77,6 +82,7 @@
       transition: all 0.3s ease;
       cursor: pointer;
       border: none;
+      white-space: nowrap;
     }
 
     .btn-gold {
@@ -115,14 +121,15 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 80px;
+      height: 75px;
     }
 
     .logo {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 700;
       color: var(--text-light);
       letter-spacing: -0.5px;
+      white-space: nowrap;
     }
 
     .logo span {
@@ -150,39 +157,58 @@
       gap: 10px;
     }
 
-    /* Main Visual (저장소 bg.jpg 직접 연결 수정) */
+    /* Main Visual (이미지 위 투명도 40% 검은색 오버레이 레이어 추가) */
     .hero {
       position: relative;
-      height: 85vh;
-      min-height: 550px;
-      background: linear-gradient(rgba(27, 42, 35, 0.65), rgba(27, 42, 35, 0.65)), 
-                  url('./bg.jpg') center/cover no-repeat;
+      height: 70vh;
+      min-height: 480px;
+      background: url('./bg.jpg') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       color: var(--text-light);
-      margin-top: 80px;
+      margin-top: 75px;
+    }
+
+    /* 40% 투명도 검은색 박스 레이어 */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
     }
 
     .hero-content h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       font-weight: 700;
-      margin-bottom: 20px;
-      line-height: 1.3;
+      margin-bottom: 18px;
+      line-height: 1.35;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
     }
 
     .hero-content p {
-      font-size: 1.2rem;
-      color: #D1D5DB;
-      margin-bottom: 35px;
+      font-size: 1.15rem;
+      color: #E5E7EB;
+      margin-bottom: 30px;
       font-weight: 300;
+      text-shadow: 0 1px 5px rgba(0,0,0,0.5);
     }
 
     .hero-buttons {
       display: flex;
       gap: 15px;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     /* About Us */
@@ -280,7 +306,7 @@
       font-size: 0.95rem;
     }
 
-    /* Services & Methods (page1 ~ page6 적용) */
+    /* Services & Methods */
     .services {
       background-color: #F4F5F1;
     }
@@ -335,7 +361,7 @@
       font-size: 0.92rem;
     }
 
-    /* Portfolio (page7.jpg ~ page9.jpg 완벽 매칭) */
+    /* Portfolio */
     .portfolio {
       background-color: var(--bg-card);
     }
@@ -402,16 +428,18 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       background-color: #03C75A;
       color: #FFFFFF !important;
-      font-size: 1.05rem;
+      font-size: 1rem;
       font-weight: 700;
-      padding: 14px 32px;
+      padding: 14px 28px;
       border-radius: 50px;
       text-decoration: none !important;
       box-shadow: 0 4px 12px rgba(3, 199, 90, 0.3);
       transition: all 0.3s ease;
+      line-height: 1.4;
+      text-align: left;
     }
 
     .btn-blog:hover {
@@ -536,11 +564,12 @@
       text-align: center;
       padding: 15px 0;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       z-index: 999;
       box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
     }
 
+    /* Mobile Responsive Adjustments (모바일 왜곡 및 두줄 찌그러짐 완전 방지) */
     @media (max-width: 992px) {
       .about-grid, .strength-grid, .services-grid, .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -549,10 +578,46 @@
 
     @media (max-width: 768px) {
       .nav-menu { display: none; }
-      .hero-content h1 { font-size: 2rem; }
+      .header-container { height: 65px; }
+      .logo { font-size: 1.15rem; }
+      
+      .header-quick .btn {
+        padding: 8px 12px !important;
+        font-size: 0.8rem !important;
+      }
+
+      .hero {
+        height: auto;
+        min-height: 420px;
+        padding: 60px 0;
+        margin-top: 65px;
+      }
+      
+      .hero-content h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-content p {
+        font-size: 0.95rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+      }
+
       .about-grid, .strength-grid, .services-grid, .portfolio-grid {
         grid-template-columns: 1fr;
       }
+
       .form-row { grid-template-columns: 1fr; }
       .mobile-quick-call { display: block; }
       body { padding-bottom: 50px; }
@@ -578,7 +643,7 @@
     </div>
   </header>
 
-  <!-- Main Visual (bg.jpg 연결 수정 완료) -->
+  <!-- Main Visual (투명도 40% 어두운 레이어 및 화면 비율 최적화 적용) -->
   <section class="hero">
     <div class="container hero-content">
       <h1>대한민국의 푸른 산하를 만드는<br>녹화·비탈면 안정을 위한 최선의 선택</h1>
@@ -637,7 +702,7 @@
     </div>
   </section>
 
-  <!-- Services & Methods (page1 ~ page6 적용) -->
+  <!-- Services & Methods -->
   <section id="services" class="section services">
     <div class="container">
       <h2 class="section-title">주요 공법 & 서비스</h2>
@@ -696,7 +761,7 @@
     </div>
   </section>
 
-  <!-- Portfolio (page7.jpg ~ page9.jpg 경로 수정 완료) -->
+  <!-- Portfolio -->
   <section id="portfolio" class="section portfolio">
     <div class="container">
       <h2 class="section-title">시공사례 & 실시간 현장</h2>
@@ -726,11 +791,15 @@
         </div>
       </div>
 
-      <!-- 네이버 블로그 배너 -->
+      <!-- 네이버 블로그 배너 (2줄 정돈 문구 적용) -->
       <div class="blog-banner">
         <p>📢 생생한 현장 시공 사례와 최신 녹화 소식을 공식 블로그에서 확인하세요!</p>
         <a href="https://blog.naver.com/todxoddl2" target="_blank" rel="noopener noreferrer" class="btn-blog">
-          <span>N</span> 푸른숲법면녹화 네이버 블로그 바로가기 ➔
+          <span style="font-size: 1.4rem; font-weight: 900;">N</span>
+          <div>
+            푸른숲법면녹화 네이버 블로그<br>
+            바로가기 ➔
+          </div>
         </a>
       </div>
     </div>
