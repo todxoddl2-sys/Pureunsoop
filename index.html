@@ -150,13 +150,13 @@
       gap: 10px;
     }
 
-    /* Main Visual (bg.jpg 적용) */
+    /* Main Visual (저장소 bg.jpg 직접 연결 수정) */
     .hero {
       position: relative;
       height: 85vh;
       min-height: 550px;
-      background: linear-gradient(rgba(27, 42, 35, 0.75), rgba(27, 42, 35, 0.75)), 
-                  url('bg.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(27, 42, 35, 0.65), rgba(27, 42, 35, 0.65)), 
+                  url('./bg.jpg') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -335,7 +335,7 @@
       font-size: 0.92rem;
     }
 
-    /* Portfolio (page7 ~ page9 적용) */
+    /* Portfolio (page7.jpg ~ page9.jpg 완벽 매칭) */
     .portfolio {
       background-color: var(--bg-card);
     }
@@ -358,6 +358,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
     }
 
     .portfolio-overlay {
@@ -577,7 +578,7 @@
     </div>
   </header>
 
-  <!-- Main Visual (bg.jpg 적용) -->
+  <!-- Main Visual (bg.jpg 연결 수정 완료) -->
   <section class="hero">
     <div class="container hero-content">
       <h1>대한민국의 푸른 산하를 만드는<br>녹화·비탈면 안정을 위한 최선의 선택</h1>
@@ -644,7 +645,7 @@
       
       <div class="services-grid">
         <div class="service-card">
-          <img src="page1.jpg" alt="코아네트 설치" class="card-img">
+          <img src="./page1.jpg" alt="코아네트 설치" class="card-img">
           <div class="service-info">
             <h3>코아네트 설치</h3>
             <div class="eng-title">Coir Net Installation</div>
@@ -652,7 +653,7 @@
           </div>
         </div>
         <div class="service-card">
-          <img src="page2.jpg" alt="씨드스프레이" class="card-img">
+          <img src="./page2.jpg" alt="씨드스프레이" class="card-img">
           <div class="service-info">
             <h3>씨드스프레이</h3>
             <div class="eng-title">Seed Spray</div>
@@ -660,7 +661,7 @@
           </div>
         </div>
         <div class="service-card">
-          <img src="page3.jpg" alt="녹생토 공법" class="card-img">
+          <img src="./page3.jpg" alt="녹생토 공법" class="card-img">
           <div class="service-info">
             <h3>녹생토 공법</h3>
             <div class="eng-title">Green Soil Method</div>
@@ -668,7 +669,7 @@
           </div>
         </div>
         <div class="service-card">
-          <img src="page4.jpg" alt="거적덮기" class="card-img">
+          <img src="./page4.jpg" alt="거적덮기" class="card-img">
           <div class="service-info">
             <h3>거적덮기</h3>
             <div class="eng-title">Erosion Control Blanket</div>
@@ -676,7 +677,7 @@
           </div>
         </div>
         <div class="service-card">
-          <img src="page5.jpg" alt="식생매트/코코넛매트" class="card-img">
+          <img src="./page5.jpg" alt="식생매트/코코넛매트" class="card-img">
           <div class="service-info">
             <h3>식생매트 / 코코넛매트</h3>
             <div class="eng-title">Vegetation & Coconut Mat</div>
@@ -684,7 +685,7 @@
           </div>
         </div>
         <div class="service-card">
-          <img src="page6.jpg" alt="법면 보강 및 식생 복원" class="card-img">
+          <img src="./page6.jpg" alt="법면 보강 및 식생 복원" class="card-img">
           <div class="service-info">
             <h3>법면 보강 및 식생 복원</h3>
             <div class="eng-title">Slope Restoration & Repair</div>
@@ -695,7 +696,7 @@
     </div>
   </section>
 
-  <!-- Portfolio (page7 ~ page9 적용) -->
+  <!-- Portfolio (page7.jpg ~ page9.jpg 경로 수정 완료) -->
   <section id="portfolio" class="section portfolio">
     <div class="container">
       <h2 class="section-title">시공사례 & 실시간 현장</h2>
@@ -703,21 +704,21 @@
       
       <div class="portfolio-grid">
         <div class="portfolio-item">
-          <img src="page7.jpg" alt="녹생토 시공 현장">
+          <img src="./page7.jpg" alt="암반 지역 녹생토 시공 현장">
           <div class="portfolio-overlay">
             <h4>암반 지역 녹생토 시공</h4>
             <p>리핑암/발파암 녹생토 공법 적용</p>
           </div>
         </div>
         <div class="portfolio-item">
-          <img src="page8.jpg" alt="씨드스프레이 현장">
+          <img src="./page8.jpg" alt="토사 비탈면 씨드스프레이 현장">
           <div class="portfolio-overlay">
             <h4>토사 비탈면 씨드스프레이</h4>
             <p>경제적인 신속 발아 녹화 시공</p>
           </div>
         </div>
         <div class="portfolio-item">
-          <img src="page9.jpg" alt="코아네트 시공 현장">
+          <img src="./page9.jpg" alt="법면 코아네트 피복 및 보강 현장">
           <div class="portfolio-overlay">
             <h4>법면 코아네트 피복 및 보강</h4>
             <p>토사 유실 방지 및 식생 기반 조성</p>
