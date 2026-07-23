@@ -379,18 +379,44 @@
       color: #D1D5DB;
     }
 
+    /* 임팩트 강화된 네이버 블로그 배너 스타일 */
     .blog-banner {
-      background-color: var(--bg-light);
-      padding: 25px;
-      border-radius: 8px;
+      background: linear-gradient(135deg, #f2fbf5 0%, #e6f7ec 100%);
+      padding: 35px 25px;
+      border-radius: 12px;
       text-align: center;
-      border: 1px dashed var(--accent-gold);
+      border: 2px solid #03C75A;
+      box-shadow: 0 6px 20px rgba(3, 199, 90, 0.12);
+      margin-top: 30px;
     }
 
-    .blog-banner a {
-      color: var(--bg-dark);
+    .blog-banner p {
+      font-size: 1.1rem;
       font-weight: 700;
-      text-decoration: underline;
+      color: #1A1A1A;
+      margin-bottom: 18px;
+    }
+
+    .btn-blog {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #03C75A;
+      color: #FFFFFF !important;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none !important;
+      box-shadow: 0 4px 12px rgba(3, 199, 90, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-blog:hover {
+      background-color: #02b350;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(3, 199, 90, 0.4);
     }
 
     /* Contact Form */
@@ -617,7 +643,6 @@
       <p class="section-subtitle">현장 지질과 경사도에 최적화된 맞춤형 녹화 공법을 제공합니다.</p>
       
       <div class="services-grid">
-        <!-- 1번째 새로 추가된 코아네트 설치 -->
         <div class="service-card">
           <img src="page1.jpg" alt="코아네트 설치" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page1.jpg'">
           <div class="service-info">
@@ -626,7 +651,6 @@
             <p>친환경 코코넛 섬유 그물망을 덮어 우수에 의한 법면 유실을 방지하고 식생 기반을 조성하는 공법</p>
           </div>
         </div>
-        <!-- 2번째 씨드스프레이 -->
         <div class="service-card">
           <img src="page2.jpg" alt="씨드스프레이" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page2.jpg'">
           <div class="service-info">
@@ -635,7 +659,6 @@
             <p>완경사지, 토사 법면에 적합한 경제적이고 신속한 기본 녹화 공법</p>
           </div>
         </div>
-        <!-- 3번째 녹생토 공법 -->
         <div class="service-card">
           <img src="page3.jpg" alt="녹생토 공법" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page3.jpg'">
           <div class="service-info">
@@ -644,7 +667,6 @@
             <p>리핑암, 발파암 등 암반 지역에 인공 토양을 분사하여 녹화하는 대표 공법</p>
           </div>
         </div>
-        <!-- 4번째 거적덮기 -->
         <div class="service-card">
           <img src="page4.jpg" alt="거적덮기" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page4.jpg'">
           <div class="service-info">
@@ -653,7 +675,6 @@
             <p>우수에 의한 토사 유실을 방지하고 초기 발아율을 높이는 친환경 보호 공법</p>
           </div>
         </div>
-        <!-- 5번째 식생매트/코코넛매트 -->
         <div class="service-card">
           <img src="page5.jpg" alt="식생매트/코코넛매트" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page5.jpg'">
           <div class="service-info">
@@ -662,7 +683,6 @@
             <p>급경사지 및 세굴 우려 지역의 법면 안정화와 식생 도모</p>
           </div>
         </div>
-        <!-- 6번째 법면 보강 및 식생 복원 -->
         <div class="service-card">
           <img src="page1.jpg" alt="법면 보강 및 식생 복원" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page1.jpg'">
           <div class="service-info">
@@ -705,9 +725,12 @@
         </div>
       </div>
 
+      <!-- 임팩트 강화된 블로그 배너 -->
       <div class="blog-banner">
-        <p>더 많은 최신 현장 시공 소식은 공식 블로그에서 확인하실 수 있습니다.</p>
-        <a href="https://blog.naver.com/todxoddl2" target="_blank" rel="noopener noreferrer">👉 푸른숲법면녹화 네이버 블로그 바로가기</a>
+        <p>📢 생생한 현장 시공 사례와 최신 녹화 소식을 공식 블로그에서 확인하세요!</p>
+        <a href="https://blog.naver.com/todxoddl2" target="_blank" rel="noopener noreferrer" class="btn-blog">
+          <span>N</span> 푸른숲법면녹화 네이버 블로그 바로가기 ➔
+        </a>
       </div>
     </div>
   </section>
