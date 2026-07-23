@@ -150,13 +150,13 @@
       gap: 10px;
     }
 
-    /* Main Visual */
+    /* Main Visual (bg.jpg 적용) */
     .hero {
       position: relative;
       height: 85vh;
       min-height: 550px;
-      background: linear-gradient(rgba(27, 42, 35, 0.82), rgba(27, 42, 35, 0.82)), 
-                  url('page1.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(27, 42, 35, 0.75), rgba(27, 42, 35, 0.75)), 
+                  url('bg.jpg') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -280,7 +280,7 @@
       font-size: 0.95rem;
     }
 
-    /* Services & Methods */
+    /* Services & Methods (page1.jpg ~ page6.jpg 적용) */
     .services {
       background-color: #F4F5F1;
     }
@@ -379,7 +379,7 @@
       color: #D1D5DB;
     }
 
-    /* 임팩트 강화된 네이버 블로그 배너 스타일 */
+    /* 네이버 블로그 배너 */
     .blog-banner {
       background: linear-gradient(135deg, #f2fbf5 0%, #e6f7ec 100%);
       padding: 35px 25px;
@@ -577,7 +577,7 @@
     </div>
   </header>
 
-  <!-- Main Visual -->
+  <!-- Main Visual (bg.jpg 적용) -->
   <section class="hero">
     <div class="container hero-content">
       <h1>대한민국의 푸른 산하를 만드는<br>녹화·비탈면 안정을 위한 최선의 선택</h1>
@@ -636,55 +636,61 @@
     </div>
   </section>
 
-  <!-- Services & Methods -->
+  <!-- Services & Methods (page1 ~ page6 적용) -->
   <section id="services" class="section services">
     <div class="container">
       <h2 class="section-title">주요 공법 & 서비스</h2>
       <p class="section-subtitle">현장 지질과 경사도에 최적화된 맞춤형 녹화 공법을 제공합니다.</p>
       
       <div class="services-grid">
+        <!-- page1.jpg -->
         <div class="service-card">
-          <img src="page1.jpg" alt="코아네트 설치" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page1.jpg'">
+          <img src="page1.jpg" alt="코아네트 설치" class="card-img">
           <div class="service-info">
             <h3>코아네트 설치</h3>
             <div class="eng-title">Coir Net Installation</div>
             <p>친환경 코코넛 섬유 그물망을 덮어 우수에 의한 법면 유실을 방지하고 식생 기반을 조성하는 공법</p>
           </div>
         </div>
+        <!-- page2.jpg -->
         <div class="service-card">
-          <img src="page2.jpg" alt="씨드스프레이" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page2.jpg'">
+          <img src="page2.jpg" alt="씨드스프레이" class="card-img">
           <div class="service-info">
             <h3>씨드스프레이</h3>
             <div class="eng-title">Seed Spray</div>
             <p>완경사지, 토사 법면에 적합한 경제적이고 신속한 기본 녹화 공법</p>
           </div>
         </div>
+        <!-- page3.jpg -->
         <div class="service-card">
-          <img src="page3.jpg" alt="녹생토 공법" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page3.jpg'">
+          <img src="page3.jpg" alt="녹생토 공법" class="card-img">
           <div class="service-info">
             <h3>녹생토 공법</h3>
             <div class="eng-title">Green Soil Method</div>
             <p>리핑암, 발파암 등 암반 지역에 인공 토양을 분사하여 녹화하는 대표 공법</p>
           </div>
         </div>
+        <!-- page4.jpg -->
         <div class="service-card">
-          <img src="page4.jpg" alt="거적덮기" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page4.jpg'">
+          <img src="page4.jpg" alt="거적덮기" class="card-img">
           <div class="service-info">
             <h3>거적덮기</h3>
             <div class="eng-title">Erosion Control Blanket</div>
             <p>우수에 의한 토사 유실을 방지하고 초기 발아율을 높이는 친환경 보호 공법</p>
           </div>
         </div>
+        <!-- page5.jpg -->
         <div class="service-card">
-          <img src="page5.jpg" alt="식생매트/코코넛매트" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page5.jpg'">
+          <img src="page5.jpg" alt="식생매트/코코넛매트" class="card-img">
           <div class="service-info">
             <h3>식생매트 / 코코넛매트</h3>
             <div class="eng-title">Vegetation & Coconut Mat</div>
             <p>급경사지 및 세굴 우려 지역의 법면 안정화와 식생 도모</p>
           </div>
         </div>
+        <!-- page6.jpg -->
         <div class="service-card">
-          <img src="page1.jpg" alt="법면 보강 및 식생 복원" class="card-img" onerror="this.src='https://via.placeholder.com/400x220?text=page1.jpg'">
+          <img src="page6.jpg" alt="법면 보강 및 식생 복원" class="card-img">
           <div class="service-info">
             <h3>법면 보강 및 식생 복원</h3>
             <div class="eng-title">Slope Restoration & Repair</div>
@@ -703,21 +709,21 @@
       
       <div class="portfolio-grid">
         <div class="portfolio-item">
-          <img src="page3.jpg" alt="녹생토 시공 현장" onerror="this.src='https://via.placeholder.com/400x240?text=page3.jpg'">
+          <img src="page3.jpg" alt="녹생토 시공 현장">
           <div class="portfolio-overlay">
             <h4>암반 지역 녹생토 시공</h4>
             <p>리핑암/발파암 녹생토 공법 적용</p>
           </div>
         </div>
         <div class="portfolio-item">
-          <img src="page2.jpg" alt="씨드스프레이 현장" onerror="this.src='https://via.placeholder.com/400x240?text=page2.jpg'">
+          <img src="page2.jpg" alt="씨드스프레이 현장">
           <div class="portfolio-overlay">
             <h4>토사 비탈면 씨드스프레이</h4>
             <p>경제적인 신속 발아 녹화 시공</p>
           </div>
         </div>
         <div class="portfolio-item">
-          <img src="page1.jpg" alt="코아네트 시공 현장" onerror="this.src='https://via.placeholder.com/400x240?text=page1.jpg'">
+          <img src="page1.jpg" alt="코아네트 시공 현장">
           <div class="portfolio-overlay">
             <h4>법면 코아네트 피복 및 보강</h4>
             <p>토사 유실 방지 및 식생 기반 조성</p>
@@ -725,7 +731,7 @@
         </div>
       </div>
 
-      <!-- 임팩트 강화된 블로그 배너 -->
+      <!-- 네이버 블로그 배너 -->
       <div class="blog-banner">
         <p>📢 생생한 현장 시공 사례와 최신 녹화 소식을 공식 블로그에서 확인하세요!</p>
         <a href="https://blog.naver.com/todxoddl2" target="_blank" rel="noopener noreferrer" class="btn-blog">
